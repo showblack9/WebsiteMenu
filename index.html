@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ShowMenu Mod – Among Us</title>
+  <link rel="icon" href="logo.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
@@ -56,6 +57,10 @@
       width: 60px;
       height: 60px;
     }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
     .container {
       max-width: 1000px;
       margin: auto;
@@ -70,7 +75,7 @@
       border-bottom: 2px solid #ff4444;
       padding-bottom: 0.5rem;
     }
-    ul li {
+    ul li, ol li {
       margin-bottom: 0.5rem;
     }
     .button {
@@ -100,12 +105,26 @@
       vertical-align: middle;
       margin-right: 10px;
     }
+    .donation a {
+      color: #ff5555;
+      text-decoration: none;
+    }
+    .donation a:hover {
+      text-decoration: underline;
+    }
     footer {
       background-color: #1c1c1c;
       text-align: center;
       color: #aaa;
-      padding: 1rem;
+      padding: 2rem 1rem;
       font-size: 0.9rem;
+    }
+    footer a {
+      color: #ff3333;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -145,7 +164,7 @@
         <li>Extract it into your Among Us game folder</li>
         <li>Launch the game and press <strong>DELETE</strong> to open the menu</li>
       </ol>
-      <a href="https://github.com/showblack9/showmenu/releases/latest/download/showmenu-0.0.1.zip" class="button">⬇ Download ShowMenu Mod</a>
+      <a href="https://github.com/showblack9/showmenu/releases/latest/download/showmenu.zip" class="button">⬇ Download ShowMenu Mod</a>
     </section>
 
     <section class="section" id="donate">
@@ -153,14 +172,14 @@
       <p>Support the project to keep it alive! Every bit helps.</p>
       <ul class="donation">
         <li><img src="https://cdn-icons-png.flaticon.com/512/174/174861.png" alt="PayPal"> <strong>PayPal:</strong> <a href="https://www.paypal.com/paypalme/lucasoliveiram" target="_blank">paypal.me/lucasoliveiram</a></li>
-        <li><img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" alt="Bitcoin" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg'"> <strong>Bitcoin:</strong> (your address here)</li>
-        <li><img src="https://cryptologos.cc/logos/litecoin-ltc-logo.png" alt="Litecoin" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/2/24/Litecoin.svg'"> <strong>Litecoin:</strong> (your address here)</li>
+        <li><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin"> <strong>Bitcoin:</strong> <span>YourBitcoinAddressHere</span></li>
+        <li><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Litecoin.svg" alt="Litecoin"> <strong>Litecoin:</strong> <span>YourLitecoinAddressHere</span></li>
       </ul>
     </section>
   </div>
 
   <footer>
-    &copy; 2025 ShowMenu by showblack9 • Open-source project for learning and fun
+    &copy; 2025 <a href="https://github.com/showblack9" target="_blank">showblack9</a> • Open-source project for learning and fun
   </footer>
 </body>
 </html>
