@@ -12,6 +12,31 @@
       background-color: #121212;
       color: #f0f0f0;
     }
+    nav {
+      background: #1a1a1a;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      padding: 0;
+      margin: 0;
+    }
+    nav a {
+      color: #ff3333;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
     header {
       background-color: #1c1c1c;
       padding: 3rem 1rem;
@@ -19,13 +44,9 @@
     }
     header h1 {
       font-family: 'Orbitron', sans-serif;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       color: #ff1a1a;
       margin-bottom: 1rem;
-    }
-    header p {
-      font-size: 1.1rem;
-      color: #ccc;
     }
     .container {
       max-width: 1000px;
@@ -33,16 +54,13 @@
       padding: 2rem;
     }
     .section {
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
     }
     .section h2 {
       color: #ff4444;
       margin-bottom: 1rem;
       border-bottom: 2px solid #ff4444;
       padding-bottom: 0.5rem;
-    }
-    ul {
-      padding-left: 1.5rem;
     }
     ul li {
       margin-bottom: 0.5rem;
@@ -68,6 +86,11 @@
       border: 2px solid #333;
       margin-top: 1rem;
     }
+    .donation img {
+      width: 40px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
     footer {
       background-color: #1c1c1c;
       text-align: center;
@@ -75,14 +98,19 @@
       padding: 1rem;
       font-size: 0.9rem;
     }
-    @media (max-width: 600px) {
-      header h1 { font-size: 2rem; }
-    }
   </style>
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="https://discord.gg/z4WPDcu4fU" target="_blank">Discord</a></li>
+      <li><a href="https://youtube.com/@show_black_" target="_blank">YouTube</a></li>
+      <li><a href="#donate">Doações</a></li>
+    </ul>
+  </nav>
 
-  <header>
+  <header id="home">
     <h1>ShowMenu Mod for Among Us</h1>
     <p>The ultimate cheat mod menu packed with powerful features 🎮</p>
   </header>
@@ -97,7 +125,7 @@
         <li>Bypass bans and game protections</li>
         <li>Player tracking via minimap overlay</li>
       </ul>
-      <img class="screenshot" src="logo.png" alt="In-game screenshot">
+      <img class="screenshot" src="assets/screenshot.png" alt="In-game screenshot">
     </section>
 
     <section class="section">
@@ -110,15 +138,19 @@
       <a href="https://github.com/showblack9/showmenu/releases/latest/download/showmenu.zip" class="button">⬇ Download ShowMenu Mod</a>
     </section>
 
-    <section class="section">
-      <h2>👤 About</h2>
-      <p>This mod was developed by <a href="https://github.com/showblack9" style="color: #ff5555;">@showblack9</a> to enhance gameplay with additional freedom and features. It is open source and licensed as provided in the GitHub repository.</p>
+    <section class="section" id="donate">
+      <h2>💸 Doações</h2>
+      <p>Ajude a manter o projeto online. Qualquer valor é bem-vindo!</p>
+      <ul class="donation">
+        <li><img src="https://cdn-icons-png.flaticon.com/512/174/174861.png" width="24"> <strong>PayPal:</strong> <a href="https://www.paypal.com/paypalme/lucasoliveiram" target="_blank">paypal.me/lucasoliveiram</a></li>
+        <li><img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" width="24"> <strong>Bitcoin:</strong> (endereço aqui)</li>
+        <li><img src="https://cryptologos.cc/logos/litecoin-ltc-logo.png" width="24"> <strong>Litecoin:</strong> (endereço aqui)</li>
+      </ul>
     </section>
   </div>
 
   <footer>
-    &copy; 2025 ShowMenu by showblack9 • Built for fun and learning purposes
+    &copy; 2025 ShowMenu by showblack9 • Open-source project for learning and fun
   </footer>
-
 </body>
 </html>
